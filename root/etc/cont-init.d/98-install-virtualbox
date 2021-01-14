@@ -1,0 +1,10 @@
+#!/usr/bin/with-contenv bash
+
+set -Eeuo pipefail
+
+## Install VirtualBox
+apt-get update
+apt-get install -y --no-install-recommends virtualbox
+
+# Cleanup package lists
+rm -rf /var/lib/apt/lists/*

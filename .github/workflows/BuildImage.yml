@@ -3,9 +3,9 @@ name: Build Image
 on: [push, pull_request, workflow_dispatch]
 
 env:
-  ENDPOINT: "linuxserver/mods" #don't modify
-  BASEIMAGE: "replace_baseimage" #replace
-  MODNAME: "replace_modname" #replace
+  ENDPOINT: "lunik1/lsio-boinc-mod-virtualbox" #don't modify
+  BASEIMAGE: "boinc" #replace
+  MODNAME: "virtualbox" #replace
 
 jobs:
   build:
